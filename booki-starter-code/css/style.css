@@ -17,6 +17,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -62,22 +63,36 @@ a {
 /****** Header ***********/
 
 .logo {
-    width: 5%;
+    width: 4.5%;
+    height: 19px;
+    margin-top: 30px;
+    margin-left: 50px;
+    
 }
 
 .header {
     display: flex;
+    justify-content: space-between;
 
 }
 
 .header-button {
     display: flex;
-    align-self: flex-end;
+    gap: 68px;
+}
+
+.header a {
+    display: flex;
+    padding: 16px;
+    border: white solid;
+    border-width: 2px;
 }
 
 .header a:hover {
     color: var(--main-color);
-    border-top: #0065FC;
+    border-top: var(--main-color) solid;
+    border-width: 2px;
+    
 
 }
 
@@ -110,7 +125,6 @@ a {
     width: 28%;
     display: flex;
     border-radius: 15px;
-    border: var(--main-bg-color) solid;
 }
 
 .map-icon {
@@ -135,6 +149,8 @@ input {
     border: none;
     outline: none;
     padding-left: 15px;
+    border-top: var(--main-bg-color) solid;
+    border-bottom: var(--main-bg-color) solid;
 }
 
 .research a {
@@ -171,6 +187,7 @@ input {
     padding: 10px;
     border-radius: 25px;
     border: var(--border-color) solid ;
+    border-width: 2px;
 }
 
 .filter:hover {
@@ -189,6 +206,7 @@ input {
     height: 24px;
     width: 24px;
     border: var(--border-color) solid;
+    border-width: 1px;
     text-align: center;
     line-height: 20px;
 
@@ -370,11 +388,12 @@ input {
 
 .footer-cards{
     display: flex;
-    justify-content: space-between;
 }
 
-.list{
-    width: 25%;
+.footer-list{
+    flex: 1 0;
+    padding: 20px;
+    gap: 15px;
 }
 
 
