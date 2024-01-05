@@ -59,6 +59,28 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+
+.logo {
+    width: 5%;
+}
+
+.header {
+    display: flex;
+
+}
+
+.header-button {
+    display: flex;
+    align-self: flex-end;
+}
+
+.header a:hover {
+    color: var(--main-color);
+    border-top: #0065FC;
+
+}
+
 /****** Info group ***********/
 
 .info-group {
@@ -66,11 +88,20 @@ a {
     flex-direction: column;
     justify-content: space-around;
     margin: 35px;
+    gap: 35px; /**autre maniere que gap**/
     
 }
 
-.headline {
+.headline-title {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 0%;
+    margin-bottom: 4px;
+}
 
+.text {
+    margin-top: 4px;
+    margin-bottom: 0%;
 }
 
 /****** Research bar ***********/
