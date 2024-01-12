@@ -63,7 +63,6 @@ a {
 /****** Header ***********/
 
 .logo {
-    width: 4.5%;
     height: 19px;
     margin-top: 30px;
     
@@ -80,19 +79,17 @@ a {
     gap: 68px;
 }
 
-.header a {
+.header-button a {
     display: flex;
     padding: 16px;
     border: white solid;
     border-width: 2px;
 }
 
-.header a:hover {
+.header-button a:hover {
     color: var(--main-color);
     border-top: var(--main-color) solid;
     border-width: 2px;
-    
-
 }
 
 /****** Info group ***********/
@@ -101,11 +98,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 35px;
-    margin-top: 55px;
-    margin-left: 0px;
-    gap: 35px;
-    
+    margin: 55px 35px 35px 0px;
+    gap: 35px;   
 }
 
 .headline-title {
@@ -124,7 +118,6 @@ a {
 /****** Research bar ***********/
 
 .research {
-    width: 28%;
     display: flex;
     border-radius: 15px;
 }
@@ -139,9 +132,6 @@ a {
     border-bottom-left-radius: 10px;
     width: 50px;
     flex-shrink: 0;
-
-
-
 }
 
 input {
@@ -151,8 +141,8 @@ input {
     border: none;
     outline: none;
     padding-left: 24px;
-    border-top: var(--main-bg-color) solid;
-    border-bottom: var(--main-bg-color) solid;
+    border-top: var(--main-bg-color) solid 1px;
+    border-bottom: var(--main-bg-color) solid 1px;
 }
 
 .research a {
@@ -162,11 +152,16 @@ input {
     background-color: var(--main-color);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 132px;
     font-size: large;
     font-weight: bold;
     color: white;
     padding: 0px 15px;
+}
+
+.research
+
+.research a i {
+    display: none;
 }
 
 
@@ -404,6 +399,10 @@ input {
     
 }
 
+.footer-title {
+    font-size: 18px;
+}
+
 .footer-cards{
     display: flex;
 }
@@ -411,7 +410,7 @@ input {
 .footer-list{
     flex: 1 0;
     padding: 20px;
-    gap: 15px;
+    
 }
 
 
@@ -420,10 +419,6 @@ input {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-
-    .logo {
-        width: 6.5%;
-    }
 
     .header-button {
         gap: 45px;
@@ -473,10 +468,6 @@ input {
         font-size: 14px;
     }
 
-    .activities {
-        padding: 30px;
-    }
-
     .activities-cards {
         gap: 30px;
     }
@@ -492,5 +483,152 @@ input {
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container {
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        padding: 30px;
+        margin: 0px;
+
+    }
+
+    .header-button {
+        gap: 0px;
+        width: 100%;
+    }
+
+    .header-button a {
+        padding: 0px 20px 20px 20px;
+        flex: 1 0 0;
+        justify-content: center;
+    }
+
+    .header-button a:hover {
+        border-top: none;
+        border-bottom: var(--main-color) solid;
+        border-width: 2px;
+    }
+
+    .info-group {
+        margin: 0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0px 20px;
+        
+    }
+
+    .research a {
+        padding: 0px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: absolute;
+        right: 20px;
+    }
+
+    .research input {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .research a i {
+        display: flex;
+        line-height: 50px;
+        background-color: var(--main-color);
+        border-radius: 10px;
+        width: 19px;
+        color: white;
+        padding: 0px 15px;
+        filter: drop-shadow(0px 5px 2px rgb(0, 0, 0, 0.25));
+    }
+
+    .research a b {
+        display: none;
+    } 
+
+    .filter-cases {
+        flex-flow: wrap;
+        gap: 10px;
+    }
+
+    .filter-cases a {
+        width: 162.5px;
+    }
+
+    .info-icon {
+        height: 22px;
+        width: 31px;
+        line-height: 19px;
+    }
+
+    .accommodations-and-popular {
+        flex-direction: column-reverse;
+    }
+
+    .accommodations-and-popular .popular {
+        margin: 0px;
+        padding: 30px 20px 30px 20px;
+    }
+
+    .popular-title {
+        padding-bottom: 20px;
+    }
+
+    .popular-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .popular-cards a {
+        width: 100%;
+    }
+
+    .popular-cards .card {
+        margin: 0px;
+    }
+
+    .accommodations-and-popular .accommodations {
+        background-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .accommodations-cards {
+        flex-direction: column;
+    }
+
+    .accommodations-cards a {
+        width: 100%;
+    }
+
+    .activities-title {
+        padding-bottom: 30px;
+    }
+
+    .activities-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .activities-cards a {
+        width: 122%;
+        margin: 0px;
+    }
+
+    .activities img {
+        height: 141px;
+    }
+
+    .footer-cards {
+        flex-direction: column;
+        padding: 20px;
+    }
 }
