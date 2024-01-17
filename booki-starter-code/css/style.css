@@ -196,6 +196,8 @@ input {
     border-radius: 25px;
     border: var(--border-color) solid ;
     border-width: 2px;
+    align-items: center;
+    justify-content: center;
 }
 
 .filter b {
@@ -359,9 +361,6 @@ input {
 }
 
 .activities .card-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 20px;
 }
 
@@ -370,6 +369,7 @@ input {
     flex-flow: row;
     justify-content: space-around;
     gap: 30px;
+    width: 100%;
 }
 
 .activities-cards a {
@@ -479,7 +479,7 @@ input {
 
     .activities-cards .card {
         margin: 0px;
-        height: 97%;
+        min-height: 306px;
     }
 }
 /* Small devices (phones, less than 768px) */
@@ -514,7 +514,8 @@ input {
     }
 
     .header-button a:hover {
-        border-top: none;
+        color: var(--main-color);
+        border-top: white solid;
         border-bottom: var(--main-color) solid;
         border-width: 2px;
     }
@@ -558,14 +559,23 @@ input {
     .filter-cases {
         flex-flow: wrap;
         gap: 10px;
+        justify-content: space-around;
     }
 
     .filter b {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .filter-cases a {
-        width: 162.5px;
+        max-width: 160px;
+        width: 48%;
+    }
+
+    .filter-cases i {
+        width: unset;
+        height: unset;
+        font-size: unset;
+
     }
 
     .info-icon {
@@ -623,7 +633,13 @@ input {
         gap: 10px;
     }
 
+    .activities-cards .card {
+        height: 100%;
+        min-height: unset;
+    }
+
     .activities-cards a {
+        width: 100%;
         margin: 0px;
     }
 
