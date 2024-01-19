@@ -197,7 +197,6 @@ input {
     border: var(--border-color) solid ;
     border-width: 2px;
     align-items: center;
-    justify-content: center;
 }
 
 .filter b {
