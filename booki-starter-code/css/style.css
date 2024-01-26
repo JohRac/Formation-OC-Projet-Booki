@@ -76,7 +76,7 @@ a {
 
 .header-button {
     display: flex;
-    gap: 68px;
+    gap: 70px;
 }
 
 .header-button a {
@@ -192,7 +192,7 @@ input {
 .filter {
     display: flex;
     gap: 10px;
-    padding: 13px 18px;
+    padding: 12px 20px;
     border-radius: 25px;
     border: var(--border-color) solid ;
     border-width: 2px;
@@ -316,7 +316,7 @@ input {
 
 .popular-cards img {
     width: 33%;
-    height: 136px;
+    height: 140px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -385,7 +385,7 @@ input {
 
 .activities img {
     width: 100%;
-    height: 439px;
+    height: 440px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
